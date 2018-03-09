@@ -59,9 +59,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/vendor/etc/rqbalance_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/rqbalance_config.xml
 
-# Platform power configuration
+# Platform specific init
 PRODUCT_PACKAGES += \
-    init.loire.pwr
+    init.loire \
+    init.loire.pwr \
+    ueventd
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -86,9 +88,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     keystore.msm8952
 
-# OpenGLES Nougat version
+# Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196610
+    ro.qc.sdk.audio.fluencetype=fluence
 
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
