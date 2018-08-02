@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8952
 
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.msm8952
+
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=fluence
