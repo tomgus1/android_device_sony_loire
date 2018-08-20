@@ -17,7 +17,7 @@ PLATFORM_COMMON_PATH := device/sony/loire
 PRODUCT_PLATFORM_SOD := true
 
 TARGET_BOARD_PLATFORM := msm8952
-KERNEL_PATH := kernel/sony/msm-4.4
+KERNEL_PATH := kernel/sony/msm-4.9
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -26,7 +26,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53.a57
@@ -44,7 +44,7 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci
 
 # Serial console
-#BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x7af0000 androidboot.console=msm_serial_dm,0x7af0000
+#BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x7af0000
 
 TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.loire
 
