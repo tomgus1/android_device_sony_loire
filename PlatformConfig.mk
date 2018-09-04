@@ -19,6 +19,8 @@ PRODUCT_PLATFORM_SOD := true
 TARGET_BOARD_PLATFORM := msm8952
 KERNEL_PATH := kernel/sony/msm-4.9
 
+#ART_BOOT_IMAGE_EXTRA_ARGS=--runtime-arg -verbose:verifier
+
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
